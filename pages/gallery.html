@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Shree Ram Mandir, Ganj</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/dynamic-sections.css" />
+  </head>
+  <body>
+    <div class="decorative-border"></div>
+    <header class="header">
+      <div class="header-content">
+        <div class="header-icons">
+          <span class="header-icon left-icon">🔮</span>
+          <div class="header-text">
+            <h1 class="temple-name">श्री राम मंदिर, गंज</h1>
+            <p class="temple-subtitle">Shree Ram Mandir, Ganj</p>
+            <p class="temple-mantra">वक्तुं शक्यं न वै यस्य महिमानम्</p>
+          </div>
+          <span class="header-icon right-icon">🔯</span>
+        </div>
+      </div>
+    </header>
+    <div class="decorative-border"></div>
+
+    <div class="container">
+      <!-- Navigation Menu -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">🏠 Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./aarti.html" class="nav-link">🙏 Aarti & Mantras</a>
+          </li>
+          <li class="nav-item">
+            <a href="./gallery.html" class="nav-link">🖼️ Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="./events.html" class="nav-link">🎉 Events</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-content">
+        <div class="divine-section">
+          <div class="ram-image-container">
+            <img
+              class="ram-image"
+              src="../images/ShreeRamChandraJee.jpg"
+              alt="Shree Ram Chandra Jee"
+              onerror="this.src='https://i.imgur.com/JFGHvDc.jpg'; this.onerror=null;"
+            />
+          </div>
+          <div class="divine-text">
+            <div class="om-symbol">ॐ</div>
+            <h2 class="divine-heading">Temple Gallery</h2>
+            <p class="divine-quote">
+              यत्र यत्र रघुनाथ कीर्तनं तत्र तत्र कृत मस्तकांजलिम्
+            </p>
+            <div class="divine-shloka">
+              <p class="shloka-meaning">
+                Wherever the glories of Lord Ram are sung, there I bow my head
+                in reverence
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <h2>🖼️ Divine Gallery</h2>
+        <div class="gallery-section">
+          <div class="category-filter">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="temple">Temple</button>
+            <button class="filter-btn" data-category="deities">Deities</button>
+            <button class="filter-btn" data-category="festivals">
+              Festivals
+            </button>
+            <button class="filter-btn" data-category="events">Events</button>
+          </div>
+
+          <div class="gallery-grid">
+            <!-- Temple Images -->
+            <div class="gallery-item" data-category="temple">
+              <img
+                src="../images/image.jpg"
+                alt="Temple Front View"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Temple Front View</div>
+            </div>
+
+            <div class="gallery-item" data-category="temple">
+              <img
+                src="../images/slider/temple-interior.jpg"
+                alt="Temple Interior"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Temple Interior</div>
+            </div>
+
+            <div class="gallery-item" data-category="temple">
+              <img
+                src="../images/slider/temple-festival.jpg"
+                alt="Temple Decoration"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Temple Decoration</div>
+            </div>
+
+            <!-- Deity Images -->
+            <div class="gallery-item" data-category="deities">
+              <img
+                src="../images/ShreeRamChandraJee.jpg"
+                alt="Shree Ram Chandra Ji"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Shree Ram Chandra Ji</div>
+            </div>
+
+            <div class="gallery-item" data-category="deities">
+              <img
+                src="../images/image.jpg"
+                alt="Sita Mata"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Sita Mata</div>
+            </div>
+
+            <div class="gallery-item" data-category="deities">
+              <img
+                src="../images/slider/temple-interior.jpg"
+                alt="Hanuman Ji"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Hanuman Ji</div>
+            </div>
+
+            <!-- Festival Images -->
+            <div class="gallery-item" data-category="festivals">
+              <img
+                src="../images/slider/temple-festival.jpg"
+                alt="Ram Navami Celebration"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Ram Navami Celebration</div>
+            </div>
+
+            <div class="gallery-item" data-category="festivals">
+              <img
+                src="../images/image.jpg"
+                alt="Diwali Celebration"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Diwali Celebration</div>
+            </div>
+
+            <div class="gallery-item" data-category="festivals">
+              <img
+                src="../images/slider/temple-interior.jpg"
+                alt="Janmashtami Celebration"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Janmashtami Celebration</div>
+            </div>
+
+            <!-- Event Images -->
+            <div class="gallery-item" data-category="events">
+              <img
+                src="../images/slider/temple-festival.jpg"
+                alt="Bhajan Sandhya"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Bhajan Sandhya</div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+              <img
+                src="../images/image.jpg"
+                alt="Pravachan"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Pravachan</div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+              <img
+                src="../images/slider/temple-interior.jpg"
+                alt="Sundarkand Path"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Sundarkand Path</div>
+            </div>
+          </div>
+
+          <!-- Gallery Modal -->
+          <div class="gallery-modal">
+            <div class="modal-content">
+              <img src="" alt="" class="modal-img" />
+              <div class="modal-caption"></div>
+              <button class="modal-close">&times;</button>
+              <div class="modal-nav">
+                <button class="modal-prev">&lt;</button>
+                <button class="modal-next">&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Information -->
+        <h2>📸 Submit Your Photos</h2>
+        <div class="info-section">
+          <p>
+            We welcome devotees to share their photos of temple events,
+            celebrations, and divine moments. Your contributions help us
+            document the spiritual journey of our temple community.
+          </p>
+          <p>
+            To submit your photos, please email them to
+            <a href="mailto:saurabh.gce@gmail.com">saurabh.gce@gmail.com</a>
+            with the following information:
+          </p>
+          <ul style="padding-left: 20px">
+            <li>Your name</li>
+            <li>Date the photo was taken</li>
+            <li>Brief description of the event or moment</li>
+            <li>Any additional information you'd like to share</li>
+          </ul>
+          <p>
+            <strong>Note:</strong> By submitting your photos, you grant Shree
+            Ram Mandir, Ganj permission to use them on our website and social
+            media platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="divine-footer">
+        <div class="footer-decoration"><span class="footer-icon">ॐ</span></div>
+        <div class="footer-text">
+          <p class="footer-mantra">श्री राम जय राम जय जय राम</p>
+          <div class="footer-divider">॥ ॥ ॥</div>
+          <p class="footer-blessing">
+            सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः
+          </p>
+          <p class="blessing-meaning">
+            May all be happy, may all be free from illness
+          </p>
+          <p class="copyright">
+            © 2025 Shree Ram Mandir, Ganj. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript for Dynamic Features -->
+    <script src="../js/temple-dynamic.js"></script>
+  </body>
+</html>

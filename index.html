@@ -8,435 +8,176 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/temple-dynamic.css" />
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        line-height: 1.6;
-        background: #f9f6f2;
-        margin: 0;
-        padding: 0;
-        color: #333;
-      }
-      .header {
-        background: linear-gradient(135deg, #ff9933 0%, #ffcc33 100%);
-        text-align: center;
-        padding: 20px 0;
-        position: relative;
-        overflow: hidden;
-        border-bottom: 8px solid #f5f5f5;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      }
-      .header::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,255,255,0.1)" d="M10 0L20 10 10 20 0 10z"/></svg>');
-        opacity: 0.3;
-      }
-      .header-content {
-        position: relative;
-        z-index: 1;
-      }
-      .header-icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-      }
-      .header-icon {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
-        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
-      }
-      .left-icon {
-        transform: scaleX(-1);
-      }
-      .header-text {
-        text-align: center;
-      }
-      .temple-name {
-        font-size: 2.5rem;
-        color: #800000;
-        margin: 0;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        font-weight: 700;
-      }
-      .temple-subtitle {
-        font-size: 1.5rem;
-        color: #fff;
-        margin: 5px 0 0;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      }
-      .temple-mantra {
-        font-size: 1rem;
-        color: #ffe0b3;
-        margin: 5px 0 0;
-        font-style: italic;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        background: #fff;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      .temple-image {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        border: 5px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
-      h2 {
-        color: #b22222;
-        margin-bottom: 10px;
-        border-bottom: 2px solid #ffcc33;
-        padding-bottom: 5px;
-        font-weight: 600;
-      }
-      .section-title {
-        color: #800000;
-        font-weight: bold;
-        margin-top: 20px;
-      }
-      a {
-        color: #0066cc;
-        text-decoration: none;
-      }
-      .decorative-border {
-        height: 15px;
-        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="15" viewBox="0 0 30 15"><path fill="%23ffcc33" d="M0 15 L15 0 L30 15 Z"/></svg>');
-        background-repeat: repeat-x;
-        margin-bottom: -5px;
-      }
-      .info-section {
-        background: #fff9f0;
-        padding: 15px;
-        border-radius: 8px;
-        margin-bottom: 15px;
-        border-left: 4px solid #ffcc33;
-      }
-      .temple-significance {
-        text-align: center;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px dashed #ffcc33;
-      }
-      .significance-title {
-        font-size: 1.2rem;
-        color: #800000;
-        margin-bottom: 5px;
-        font-weight: 500;
-      }
-      .significance-meaning {
-        font-style: italic;
-        color: #666;
-        font-size: 0.9rem;
-      }
-      .contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .divine-section {
-        display: flex;
-        align-items: center;
-        background: linear-gradient(to right, #fff9e6, #fff5d6, #fff9e6);
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 30px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border: 1px solid #ffcc33;
-        position: relative;
-        overflow: hidden;
-      }
-      .divine-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path fill="rgba(255,204,51,0.1)" d="M0 20 L20 0 L40 20 L20 40 Z"/></svg>');
-        opacity: 0.3;
-      }
-      .ram-image {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 5px solid #de6808;
-        box-shadow: 0 0 15px rgba(255, 204, 51, 0.5);
-        z-index: 1;
-      }
-      .divine-text {
-        flex: 1;
-        padding-left: 20px;
-        text-align: center;
-        z-index: 1;
-      }
-      .divine-section {
-        padding: 15px;
-      }
-      .om-symbol {
-        font-size: 3rem;
-        color: #b22222;
-        margin-bottom: 10px;
-      }
-      .divine-heading {
-        color: #800000;
-        font-size: 1.8rem;
-        margin: 10px 0;
-      }
-      .divine-quote {
-        font-style: italic;
-        color: #333;
-        font-size: 1.2rem;
-        margin-top: 10px;
-      }
-      .divine-shloka {
-        margin-top: 15px;
-        padding: 10px;
-        background-color: rgba(255, 204, 51, 0.1);
-        border-radius: 5px;
-      }
-      .divine-shloka p {
-        margin: 5px 0;
-        font-size: 1.1rem;
-        color: #800000;
-      }
-      .shloka-meaning {
-        font-size: 0.9rem !important;
-        color: #666 !important;
-        font-style: italic;
-      }
-      .temple-images {
-        margin-bottom: 30px;
-      }
-      .divine-footer {
-        margin-top: 50px;
-        padding-top: 30px;
-        border-top: 1px solid #ffcc33;
-        text-align: center;
-      }
-      .footer-decoration {
-        margin-bottom: 20px;
-      }
-      .footer-icon {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
-        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-      }
-      .footer-mantra {
-        font-size: 1.3rem;
-        color: #e0bc08;
-        margin-bottom: 10px;
-        font-weight: 500;
-      }
-      .footer-divider {
-        color: #ffcc33;
-        font-size: 1.2rem;
-        margin: 10px 0;
-      }
-      .footer-blessing {
-        font-size: 1.1rem;
-        color: #800000;
-        margin: 10px 0 5px;
-      }
-      .blessing-meaning {
-        font-style: italic;
-        color: #666;
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-      }
-      .copyright {
-        color: #777;
-        font-size: 0.9rem;
-        margin-top: 10px;
-        border-top: 1px solid #eee;
-        padding-top: 10px;
-      }
-
-      /* Dynamic Sections Styling */
-      .dynamic-sections {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-bottom: 30px;
-      }
-
-      @media (max-width: 768px) {
-        .dynamic-sections {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/dynamic-sections.css" />
   </head>
   <body>
     <div class="decorative-border"></div>
     <header class="header">
       <div class="header-content">
         <div class="header-icons">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAH9CAYAAADVvj8ZAAAAAXNSR0IArs4c6QAAIABJREFUeF7svQmcZXdZJvycfblbLV3dnT0h"
-            alt="sankh"
-            class="header-icon left-icon"
-          />
+          <span class="header-icon left-icon">🔮</span>
           <div class="header-text">
             <h1 class="temple-name">श्री राम मंदिर, गंज</h1>
             <p class="temple-subtitle">Shree Ram Mandir, Ganj</p>
             <p class="temple-mantra">वक्तुं शक्यं न वै यस्य महिमानम्</p>
           </div>
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAAAXNSR0IArs4c6QAAIABJREFUeF7svXmMZfl1Hvfd/d631qu1u3rv"
-            alt="chakra"
-            class="header-icon right-icon"
-          />
+          <span class="header-icon right-icon">🔯</span>
         </div>
       </div>
     </header>
     <div class="decorative-border"></div>
 
     <div class="container">
-      <div class="divine-section">
-        <img
-          class="ram-image"
-          src="./images/ShreeRamChandraJee.jpg"
-          alt="Shree Ram Chandra Jee"
-        />
-        <div class="divine-text">
-          <div class="om-symbol">ॐ</div>
-          <h2 class="divine-heading">Shree Ram Chandra Jee</h2>
-          <p class="divine-quote">
-            हरे कृष्ण हरे कृष्ण, कृष्ण कृष्ण हरे हरे | हरे राम हरे राम, राम राम
-            हरे हरे ||
-          </p>
-          <div class="divine-shloka">
-            <p>रामो राजमणिः सदा विजयते</p>
-            <p class="shloka-meaning">
-              Lord Rama, the jewel among kings, is always victorious
+      <!-- Navigation Menu -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">🏠 Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/aarti.html" class="nav-link">🙏 Aarti & Mantras</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/gallery.html" class="nav-link">🖼️ Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/events.html" class="nav-link">🎉 Events</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-content">
+        <div class="divine-section">
+          <div class="ram-image-container">
+            <img
+              class="ram-image"
+              src="./images/ShreeRamChandraJee.jpg"
+              alt="Shree Ram Chandra Jee"
+              onerror="this.src='https://i.imgur.com/JFGHvDc.jpg'; this.onerror=null;"
+            />
+          </div>
+          <div class="divine-text">
+            <div class="om-symbol">ॐ</div>
+            <h2 class="divine-heading">Shree Ram Chandra Jee</h2>
+            <p class="divine-quote">
+              हरे कृष्ण हरे कृष्ण, कृष्ण कृष्ण हरे हरे | हरे राम हरे राम, राम
+              राम हरे हरे ||
             </p>
+            <div class="divine-shloka">
+              <p>रामो राजमणिः सदा विजयते</p>
+              <p class="shloka-meaning">
+                Lord Rama, the jewel among kings, is always victorious
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Dynamic Image Slider -->
-      <div class="temple-slider">
-        <div class="slide">
-          <img src="./images/image.jpg" alt="Shree Ram Mandir Front View" />
-          <div class="slide-caption">Front View of Shree Ram Mandir</div>
+        <!-- Dynamic Image Slider -->
+        <div class="temple-slider">
+          <div class="slide">
+            <img
+              src="./images/image.jpg"
+              alt="Shree Ram Mandir Front View"
+              onerror="this.src='https://i.imgur.com/JFGHvDc.jpg'; this.onerror=null;"
+            />
+            <div class="slide-caption">Front View of Shree Ram Mandir</div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/slider/temple-interior.jpg"
+              alt="Temple Interior"
+              onerror="this.src='https://i.imgur.com/JFGHvDc.jpg'; this.onerror=null;"
+            />
+            <div class="slide-caption">Divine Interior of the Temple</div>
+          </div>
+          <div class="slide">
+            <img
+              src="./images/slider/temple-festival.jpg"
+              alt="Temple Festival"
+              onerror="this.src='https://i.imgur.com/JFGHvDc.jpg'; this.onerror=null;"
+            />
+            <div class="slide-caption">Celebration of Ram Navami</div>
+          </div>
+          <div class="slider-controls">
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+          </div>
         </div>
-        <div class="slide">
-          <img
-            src="./images/slider/temple-interior.jpg"
-            alt="Temple Interior"
-          />
-          <div class="slide-caption">Divine Interior of the Temple</div>
-        </div>
-        <div class="slide">
-          <img
-            src="./images/slider/temple-festival.jpg"
-            alt="Temple Festival"
-          />
-          <div class="slide-caption">Celebration of Ram Navami</div>
-        </div>
-        <div class="slider-controls">
-          <button class="prev-btn">❮</button>
-          <button class="next-btn">❯</button>
-        </div>
-      </div>
 
-      <h2>🕍 About The Temple</h2>
-      <div class="info-section">
-        <div class="temple-significance">
-          <p class="significance-title">धर्मस्य मूलं भगवतो भक्तिः</p>
-          <p class="significance-meaning">
-            Devotion to God is the root of righteousness
+        <h2>🕍 About The Temple</h2>
+        <div class="info-section">
+          <div class="temple-significance">
+            <p class="significance-title">धर्मस्य मूलं भगवतो भक्तिः</p>
+            <p class="significance-meaning">
+              Devotion to God is the root of righteousness
+            </p>
+          </div>
+          <p>
+            This temple is dedicated to the Hindu deity Lord Shree Ram. Shree
+            Ram Mandir is a revered symbol of devotion, spiritual legacy, and
+            community faith, established through the noble vision and efforts of
+            Shri Mahadev Sah’s sons — Shri Raghunandan Sah and Shri Ramnandan
+            Sah, respected residents of Ganj Bharasara, located in the historic
+            district of Rohtas in Bihar. Inspired by a deep sense of dharma and
+            family devotion, the temple was envisioned as a sacred space to
+            foster worship, harmony, and cultural continuity within the
+            community. The temple’s construction reached its completion on the
+            auspicious occasion of Vaishakha Shukla Paksha Dashami in Vikram
+            Samvat 1995, which corresponds to May 17, 1938 AD. This divine
+            undertaking was carried out under the dedicated leadership and
+            heartfelt support of Shri Shivdayal Sah and Shri Bhagwan Dayal Sah.
+            Today, Shri Ram Mandir stands not only as a spiritual center but
+            also as a lasting tribute to the family's unwavering faith and
+            cultural commitment. It continues to inspire and unite generations,
+            preserving the rich traditions and values upon which it was founded.
           </p>
         </div>
-        <p>
-          This temple is dedicated to the Hindu deity Lord Shree Ram. Shree Ram
-          Mandir is a revered symbol of devotion, spiritual legacy, and
-          community faith, established through the noble vision and efforts of
-          Shri Mahadev Sah’s sons — Shri Raghunandan Sah and Shri Ramnandan Sah,
-          respected residents of Ganj Bharasara, located in the historic
-          district of Rohtas in Bihar. Inspired by a deep sense of dharma and
-          family devotion, the temple was envisioned as a sacred space to foster
-          worship, harmony, and cultural continuity within the community. The
-          temple’s construction reached its completion on the auspicious
-          occasion of Vaishakha Shukla Paksha Dashami in Vikram Samvat 1995,
-          which corresponds to May 17, 1938 AD. This divine undertaking was
-          carried out under the dedicated leadership and heartfelt support of
-          Shri Shivdayal Sah and Shri Bhagwan Dayal Sah. Today, Shri Ram Mandir
-          stands not only as a spiritual center but also as a lasting tribute to
-          the family's unwavering faith and cultural commitment. It continues to
-          inspire and unite generations, preserving the rich traditions and
-          values upon which it was founded.
-        </p>
-      </div>
 
-      <h2>📍 Location</h2>
-      <div class="info-section">
-        <p>
-          Ward No 6, Near Post Office, Ganj Bharasara, Dinara, Rohtas, Bihar –
-          802218
-        </p>
-      </div>
-
-      <h2>⏰ Temple Timings</h2>
-      <div class="info-section">
-        <p>
-          <strong>Morning:</strong> 5:00 AM to 12:00 PM<br />
-          <strong>Evening:</strong> 4:00 PM to 9:00 PM<br />
-          <strong>Aarti Timings:</strong> 7:00 AM and 8:00 PM
-        </p>
-      </div>
-
-      <h2>🚗 How to Reach</h2>
-      <div class="info-section">
-        <p>
-          <strong>By Road:</strong> Regular bus services available from
-          Dinara<br />
-          <strong>By Train:</strong> Nearest railway station is at Buxar (40
-          km)<br />
-          <strong>By Air:</strong> Nearest airport is at Patna (120 km)
-        </p>
-      </div>
-
-      <h2>📞 Contact Information</h2>
-      <div class="info-section contact-info">
-        <div class="contact-item">
-          <span>📱</span>
-          <a href="tel:+918340417830">+91 8340417830</a>
+        <h2>📍 Location</h2>
+        <div class="info-section">
+          <p>
+            Ward No 6, Near Post Office, Ganj Bharasara, Dinara, Rohtas, Bihar –
+            802218
+          </p>
         </div>
-        <div class="contact-item">
-          <span>📧</span>
-          <a href="mailto:saurabh.gce@gmail.com">saurabh.gce@gmail.com</a>
+
+        <h2>⏰ Temple Timings</h2>
+        <div class="info-section">
+          <p>
+            <strong>Morning:</strong> 5:00 AM to 12:00 PM<br />
+            <strong>Evening:</strong> 4:00 PM to 9:00 PM<br />
+            <strong>Aarti Timings:</strong> 7:00 AM and 8:00 PM
+          </p>
+        </div>
+
+        <h2>🚗 How to Reach</h2>
+        <div class="info-section">
+          <p>
+            <strong>By Road:</strong> Regular bus services available from
+            Dinara<br />
+            <strong>By Train:</strong> Nearest railway station is at Buxar (40
+            km)<br />
+            <strong>By Air:</strong> Nearest airport is at Patna (120 km)
+          </p>
+        </div>
+
+        <h2>📞 Contact Information</h2>
+        <div class="info-section contact-info">
+          <div class="contact-item">
+            <span>📱</span>
+            <a href="tel:+918340417830">+91 8340417830</a>
+          </div>
+          <div class="contact-item">
+            <span>📧</span>
+            <a href="mailto:saurabh.gce@gmail.com">saurabh.gce@gmail.com</a>
+          </div>
         </div>
       </div>
 
       <div class="divine-footer">
         <div class="footer-decoration">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAH9CAYAAADVvj8ZAAAAAXNSR0IArs4c6QAAIABJREFUeF7svQmcZXdZJvycfblbLV3dnT0h"
-            alt="sankh chakra"
-            class="footer-icon"
-          />
+          <span class="footer-icon">ॐ</span>
         </div>
         <div class="footer-text">
           <p class="footer-mantra">श्री राम जय राम जय जय राम</p>
@@ -454,6 +195,6 @@
       </div>
     </div>
     <!-- JavaScript for Dynamic Features -->
-    <script src="js/temple.js"></script>
+    <script src="js/temple-dynamic.js"></script>
   </body>
 </html>

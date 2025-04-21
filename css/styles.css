@@ -1,0 +1,395 @@
+/* Main Temple Website Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #f9f6f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #ff9933 0%, #ffcc33 100%);
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 8px solid #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,255,255,0.1)" d="M10 0L20 10 10 20 0 10z"/></svg>');
+  opacity: 0.3;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-icon {
+  font-size: 2.5rem;
+  color: #800000;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.left-icon {
+  transform: scaleX(-1);
+}
+
+.header-text {
+  text-align: center;
+}
+
+.temple-name {
+  font-size: 2.5rem;
+  color: #800000;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.temple-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 5px 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.temple-mantra {
+  font-size: 1rem;
+  color: #ffe0b3;
+  margin: 5px 0 0;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Container Styles */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.temple-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #b22222;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffcc33;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.section-title {
+  color: #800000;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #800000;
+}
+
+.decorative-border {
+  height: 15px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="15" viewBox="0 0 30 15"><path fill="%23ffcc33" d="M0 15 L15 0 L30 15 Z"/></svg>');
+  background-repeat: repeat-x;
+  margin-bottom: -5px;
+}
+
+/* Info Section Styles */
+.info-section {
+  background: #fff9f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #ffcc33;
+}
+
+.temple-significance {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #ffcc33;
+}
+
+.significance-title {
+  font-size: 1.2rem;
+  color: #800000;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.significance-meaning {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Divine Section Styles */
+.divine-section {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #fff9e6, #fff5d6, #fff9e6);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffcc33;
+  position: relative;
+  overflow: hidden;
+}
+
+.divine-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path fill="rgba(255,204,51,0.1)" d="M0 20 L20 0 L40 20 L20 40 Z"/></svg>');
+  opacity: 0.3;
+}
+
+.ram-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  min-width: 170px;
+}
+
+.ram-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #de6808;
+  box-shadow: 0 0 15px rgba(255, 204, 51, 0.5);
+  z-index: 1;
+  background-color: #fff5d6;
+}
+
+.divine-text {
+  flex: 1;
+  padding-left: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.om-symbol {
+  font-size: 3rem;
+  color: #b22222;
+  margin-bottom: 10px;
+}
+
+.divine-heading {
+  color: #800000;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.divine-quote {
+  font-style: italic;
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.divine-shloka {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgba(255, 204, 51, 0.1);
+  border-radius: 5px;
+}
+
+.divine-shloka p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #800000;
+}
+
+.shloka-meaning {
+  font-size: 0.9rem !important;
+  color: #666 !important;
+  font-style: italic;
+}
+
+/* Footer Styles */
+.divine-footer {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #ffcc33;
+  text-align: center;
+}
+
+.footer-decoration {
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  font-size: 2.5rem;
+  color: #e0bc08;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.footer-mantra {
+  font-size: 1.3rem;
+  color: #e0bc08;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.footer-divider {
+  color: #ffcc33;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.footer-blessing {
+  font-size: 1.1rem;
+  color: #800000;
+  margin: 10px 0 5px;
+}
+
+.blessing-meaning {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.copyright {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+/* Navigation Styles */
+.main-nav {
+  background: #800000;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #660000;
+  text-decoration: none;
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .divine-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .divine-text {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .header-icons {
+    flex-direction: column;
+  }
+}
+
+/* Page Transitions */
+.page-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
