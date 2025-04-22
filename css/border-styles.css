@@ -1,0 +1,110 @@
+/* Traditional Temple Border Styles */
+
+/* Main container with border */
+.temple-container {
+  position: relative;
+  background-color: #fff;
+  border-left: 25px solid #c06a15; /* Left border - deep orange */
+  border-right: 25px solid #c06a15; /* Right border - deep orange */
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Top wavy border */
+.top-border {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" preserveAspectRatio="none"><path fill="%23a0450e" d="M0,0 C100,12 200,24 300,12 C400,0 500,12 600,24 C700,12 800,0 900,12 C1000,24 1100,12 1200,0 L1200,24 L0,24 Z"></path></svg>');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  z-index: 100;
+}
+
+/* Decorative vertical patterns */
+.left-pattern,
+.right-pattern {
+  position: absolute;
+  top: 20px; /* Start below the wavy border */
+  width: 25px;
+  height: calc(100% - 20px);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+.left-pattern {
+  left: -25px; /* Position over the left border */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 50"><path fill="%23e6a23c" d="M0,0 L25,0 L25,50 L0,50 Z"></path><path fill="%23c06a15" d="M12.5,5 L5,15 L12.5,25 L20,15 Z M12.5,30 L5,40 L12.5,50 L20,40 Z"></path></svg>');
+}
+
+.right-pattern {
+  right: -25px; /* Position over the right border */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 50"><path fill="%23e6a23c" d="M0,0 L25,0 L25,50 L0,50 Z"></path><path fill="%23c06a15" d="M12.5,5 L5,15 L12.5,25 L20,15 Z M12.5,30 L5,40 L12.5,50 L20,40 Z"></path></svg>');
+}
+
+/* Bottom border */
+.bottom-border {
+  height: 20px;
+  background-color: #a0450e;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .temple-container {
+    border-left-width: 15px;
+    border-right-width: 15px;
+  }
+
+  .left-pattern,
+  .right-pattern {
+    width: 15px;
+  }
+
+  .left-pattern {
+    left: -15px;
+  }
+
+  .right-pattern {
+    right: -15px;
+  }
+}
+
+/* Additional color for the main content area to match the image */
+.page-content {
+  background-color: #f0c080;
+  padding: 20px;
+  border-radius: 0;
+}
+
+/* Adjust container background to match the image */
+.container {
+  background-color: #f0c080;
+  box-shadow: none;
+}
+
+/* Adjust info sections to stand out against the new background */
+.info-section {
+  background: rgba(255, 255, 255, 0.7);
+  border-left: 4px solid #c06a15;
+}
+
+/* Divine section adjustments */
+.divine-section {
+  background: linear-gradient(to right, #f0c080, #f5d6a8, #f0c080);
+  border: 1px solid #c06a15;
+}
+
+/* Footer adjustments */
+.divine-footer {
+  border-top: 1px solid #c06a15;
+}
+
+/* Navigation adjustments */
+.main-nav {
+  background: #a0450e;
+}

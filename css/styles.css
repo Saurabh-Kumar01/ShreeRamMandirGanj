@@ -393,3 +393,10 @@ a:hover {
     transform: translateY(0);
   }
 }
+
+.full-width-audio {
+  width: 100%; /* Makes the audio player take the full width of its container */
+  max-width: 600px; /* Optional: Set a maximum width if needed */
+  display: block; /* Ensures proper alignment */
+  margin: 0 auto; /* Centers the audio player */
+}
