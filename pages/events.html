@@ -12,17 +12,26 @@
     <link rel="stylesheet" href="../css/dynamic-sections.css" />
   </head>
   <body>
-    <div class="decorative-border"></div>
-    <header class="header">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="decorative-border" role="presentation" aria-hidden="true"></div>
+    <header class="header" role="banner">
       <div class="header-content">
         <div class="header-icons">
-          <span class="header-icon left-icon">🔮</span>
+          <img
+            class="header-icon left-icon"
+            src="../images/sankh.png"
+            alt="Sankh - Sacred Conch Shell"
+          />
           <div class="header-text">
             <h1 class="temple-name">श्री राम मंदिर, गंज</h1>
             <p class="temple-subtitle">Shree Ram Mandir, Ganj</p>
             <p class="temple-mantra">वक्तुं शक्यं न वै यस्य महिमानम्</p>
           </div>
-          <span class="header-icon right-icon">🔯</span>
+          <img
+            class="header-icon right-icon"
+            src="../images/chakra.png"
+            alt="Chakra - Sudarshan Chakra"
+          />
         </div>
       </div>
     </header>
@@ -30,7 +39,7 @@
 
     <div class="container">
       <!-- Navigation Menu -->
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <ul class="nav-list">
           <li class="nav-item">
             <a href="../index.html" class="nav-link">🏠 Home</a>
@@ -47,7 +56,7 @@
         </ul>
       </nav>
 
-      <div class="page-content">
+      <main id="main-content" class="page-content">
         <div class="divine-section">
           <div class="ram-image-container">
             <img
@@ -80,9 +89,9 @@
                 <div class="event-date">
                   <div class="event-calendar">
                     <span>APR</span>
-                    <span class="event-day">17</span>
+                    <span class="event-day">6</span>
                   </div>
-                  <span>Birth celebration of Lord Ram</span>
+                  <span>Birth celebration of Lord Ram (2025)</span>
                 </div>
               </div>
             </div>
@@ -120,9 +129,9 @@
                 <div class="event-date">
                   <div class="event-calendar">
                     <span>APR</span>
-                    <span class="event-day">23</span>
+                    <span class="event-day">12</span>
                   </div>
-                  <span>Birth celebration of Lord Hanuman</span>
+                  <span>Birth celebration of Lord Hanuman (2025)</span>
                 </div>
               </div>
             </div>
@@ -159,10 +168,10 @@
                 <h3 class="event-title">Akshaya Tritiya</h3>
                 <div class="event-date">
                   <div class="event-calendar">
-                    <span>MAY</span>
-                    <span class="event-day">10</span>
+                    <span>APR</span>
+                    <span class="event-day">30</span>
                   </div>
-                  <span>Auspicious day for new beginnings</span>
+                  <span>Auspicious day for new beginnings (2025)</span>
                 </div>
               </div>
             </div>
@@ -350,9 +359,9 @@
             <a href="mailto:saurabh.gce@gmail.com">saurabh.gce@gmail.com</a>.
           </p>
         </div>
-      </div>
+      </main>
 
-      <div class="divine-footer">
+      <footer class="divine-footer" role="contentinfo">
         <div class="footer-decoration">
           <span class="footer-icon">ॐ</span>
         </div>
@@ -369,7 +378,7 @@
             © 2025 Shree Ram Mandir, Ganj. All Rights Reserved.
           </p>
         </div>
-      </div>
+      </footer>
     </div>
     <!-- JavaScript for Dynamic Features -->
     <script src="../js/temple-dynamic.js"></script>

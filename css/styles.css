@@ -1,4 +1,21 @@
 /* Main Temple Website Styles */
+
+/* Accessibility: Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #800000;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;

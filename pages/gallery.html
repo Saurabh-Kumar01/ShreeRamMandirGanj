@@ -12,17 +12,26 @@
     <link rel="stylesheet" href="../css/dynamic-sections.css" />
   </head>
   <body>
-    <div class="decorative-border"></div>
-    <header class="header">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="decorative-border" role="presentation" aria-hidden="true"></div>
+    <header class="header" role="banner">
       <div class="header-content">
         <div class="header-icons">
-          <span class="header-icon left-icon">🔮</span>
+          <img
+            class="header-icon left-icon"
+            src="../images/sankh.png"
+            alt="Sankh - Sacred Conch Shell"
+          />
           <div class="header-text">
             <h1 class="temple-name">श्री राम मंदिर, गंज</h1>
             <p class="temple-subtitle">Shree Ram Mandir, Ganj</p>
             <p class="temple-mantra">वक्तुं शक्यं न वै यस्य महिमानम्</p>
           </div>
-          <span class="header-icon right-icon">🔯</span>
+          <img
+            class="header-icon right-icon"
+            src="../images/chakra.png"
+            alt="Chakra - Sudarshan Chakra"
+          />
         </div>
       </div>
     </header>
@@ -30,7 +39,7 @@
 
     <div class="container">
       <!-- Navigation Menu -->
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <ul class="nav-list">
           <li class="nav-item">
             <a href="../index.html" class="nav-link">🏠 Home</a>
@@ -47,7 +56,7 @@
         </ul>
       </nav>
 
-      <div class="page-content">
+      <main id="main-content" class="page-content">
         <div class="divine-section">
           <div class="ram-image-container">
             <img
@@ -114,6 +123,33 @@
               <div class="gallery-caption">Temple Decoration</div>
             </div>
 
+            <div class="gallery-item" data-category="temple">
+              <img
+                src="../images/IMG_20250421_094907323_AE.jpg"
+                alt="Temple View"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Temple View</div>
+            </div>
+
+            <div class="gallery-item" data-category="temple">
+              <img
+                src="../images/IMG_20250421_095043088_AE.jpg"
+                alt="Temple Architecture"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Temple Architecture</div>
+            </div>
+
+            <div class="gallery-item" data-category="temple">
+              <img
+                src="../images/IMG_20250421_095321085_AE.jpg"
+                alt="Temple Premises"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Temple Premises</div>
+            </div>
+
             <!-- Deity Images -->
             <div class="gallery-item" data-category="deities">
               <img
@@ -126,76 +162,85 @@
 
             <div class="gallery-item" data-category="deities">
               <img
-                src="../images/image.jpg"
-                alt="Sita Mata"
+                src="../images/IMG_20250421_095447765_AE.jpg"
+                alt="Divine Deity"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Sita Mata</div>
+              <div class="gallery-caption">Divine Deity</div>
             </div>
 
             <div class="gallery-item" data-category="deities">
               <img
-                src="../images/slider/temple-interior.jpg"
-                alt="Hanuman Ji"
+                src="../images/IMG_20250421_095512248_AE.jpg"
+                alt="Sacred Idol"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Hanuman Ji</div>
+              <div class="gallery-caption">Sacred Idol</div>
             </div>
 
             <!-- Festival Images -->
             <div class="gallery-item" data-category="festivals">
               <img
-                src="../images/slider/temple-festival.jpg"
-                alt="Ram Navami Celebration"
+                src="../images/IMG_20250421_095613482_AE.jpg"
+                alt="Festival Celebration"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Ram Navami Celebration</div>
+              <div class="gallery-caption">Festival Celebration</div>
             </div>
 
             <div class="gallery-item" data-category="festivals">
               <img
-                src="../images/image.jpg"
-                alt="Diwali Celebration"
+                src="../images/IMG_20250421_095644965_HDR_AE.jpg"
+                alt="Temple Festival"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Diwali Celebration</div>
+              <div class="gallery-caption">Temple Festival</div>
             </div>
 
             <div class="gallery-item" data-category="festivals">
               <img
-                src="../images/slider/temple-interior.jpg"
-                alt="Janmashtami Celebration"
+                src="../images/IMG_20250421_095714252_HDR_AE.jpg"
+                alt="Festive Decorations"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Janmashtami Celebration</div>
+              <div class="gallery-caption">Festive Decorations</div>
             </div>
 
             <!-- Event Images -->
             <div class="gallery-item" data-category="events">
               <img
-                src="../images/slider/temple-festival.jpg"
-                alt="Bhajan Sandhya"
+                src="../images/IMG_20250421_095758437_AE.jpg"
+                alt="Temple Event"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Bhajan Sandhya</div>
+              <div class="gallery-caption">Temple Event</div>
             </div>
 
             <div class="gallery-item" data-category="events">
               <img
-                src="../images/image.jpg"
-                alt="Pravachan"
+                src="../images/IMG_20250421_095834074_AE.jpg"
+                alt="Community Gathering"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Pravachan</div>
+              <div class="gallery-caption">Community Gathering</div>
             </div>
 
             <div class="gallery-item" data-category="events">
               <img
-                src="../images/slider/temple-interior.jpg"
-                alt="Sundarkand Path"
+                src="../images/IMG_20250421_095900659_AE.jpg"
+                alt="Devotional Program"
                 class="gallery-img"
               />
-              <div class="gallery-caption">Sundarkand Path</div>
+              <div class="gallery-caption">Devotional Program</div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+              <img
+                src="../images/IMG_20250421_100123095_HDR_AE.jpg"
+                alt="Temple Activity"
+                class="gallery-img"
+              />
+              <div class="gallery-caption">Temple Activity</div>
             </div>
           </div>
 
@@ -238,9 +283,9 @@
             media platforms.
           </p>
         </div>
-      </div>
+      </main>
 
-      <div class="divine-footer">
+      <footer class="divine-footer" role="contentinfo">
         <div class="footer-decoration"><span class="footer-icon">ॐ</span></div>
         <div class="footer-text">
           <p class="footer-mantra">श्री राम जय राम जय जय राम</p>
@@ -255,7 +300,7 @@
             © 2025 Shree Ram Mandir, Ganj. All Rights Reserved.
           </p>
         </div>
-      </div>
+      </footer>
     </div>
     <!-- JavaScript for Dynamic Features -->
     <script src="../js/temple-dynamic.js"></script>
